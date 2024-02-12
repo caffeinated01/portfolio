@@ -24,14 +24,14 @@ function Nav() {
       </nav>
       {isOpen && (
         <div className="flex basis-full flex-col items-center">
-          <Link to="/" onClick={toggleNavbar}>
+          <Link to="/" onClick={toggleNavbar} className="border-b w-full">
             HOME
           </Link>
-          <Link to="/about" onClick={toggleNavbar}>
+          <Link to="/about" onClick={toggleNavbar} className="border-b w-full">
             ABOUT
           </Link>
-          <Link to="/projects" onClick={toggleNavbar}>PROJECTS</Link>
-          <Link to="/achievements" onClick={toggleNavbar}>ACHIEVEMENTS</Link>
+          <Link to="/projects" onClick={toggleNavbar} className="border-b w-full">PROJECTS</Link>
+          <Link to="/achievements" onClick={toggleNavbar} className="border-b w-full">ACHIEVEMENTS</Link>
         </div>
       )}
     </>
