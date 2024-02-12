@@ -11,7 +11,7 @@ function Nav() {
 
   return (
     <>
-      <nav className="flex justify-end">
+      <nav className="flex justify-end pt-2">
         <div className="hidden w-full justify-between gap-4 md:flex">
           <Link to="/">HOME</Link>
           <Link to="/about">ABOUT</Link>
@@ -19,7 +19,9 @@ function Nav() {
           <Link to="/achievements">ACHIEVEMENTS</Link>
         </div>
         <div className="md:hidden">
-          <button className="text-2xl" onClick={toggleNavbar}>{isOpen ? <IoClose /> : <IoMenu />}</button>
+          <button className="text-2xl pt-1" onClick={toggleNavbar}>
+            {isOpen ? <IoClose /> : <IoMenu />}
+          </button>
         </div>
       </nav>
       {isOpen && (
@@ -30,8 +32,20 @@ function Nav() {
           <Link to="/about" onClick={toggleNavbar} className="border-b w-full">
             ABOUT
           </Link>
-          <Link to="/projects" onClick={toggleNavbar} className="border-b w-full">PROJECTS</Link>
-          <Link to="/achievements" onClick={toggleNavbar} className="border-b w-full">ACHIEVEMENTS</Link>
+          <Link
+            to="/projects"
+            onClick={toggleNavbar}
+            className="border-b w-full"
+          >
+            PROJECTS
+          </Link>
+          <Link
+            to="/achievements"
+            onClick={toggleNavbar}
+            className="border-b w-full"
+          >
+            ACHIEVEMENTS
+          </Link>
         </div>
       )}
     </>
