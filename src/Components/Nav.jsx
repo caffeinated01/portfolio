@@ -11,7 +11,7 @@ function Nav() {
 
   return (
     <>
-      <nav className="flex justify-end pt-2">
+      <nav className="flex justify-end">
         <div className="hidden w-full justify-between gap-4 md:flex">
           <Link to="/" className="hover:-translate-y-1 duration-150">HOME</Link>
           <Link to="/about" className="hover:-translate-y-1 duration-150">ABOUT</Link>
@@ -25,7 +25,7 @@ function Nav() {
         </div>
       </nav>
       {isOpen && (
-        <div className="flex basis-full flex-col items-center">
+        <div className="flex flex-col basis-full items-center">
           <Link to="/" onClick={toggleNavbar} className="border-b w-full">
             HOME
           </Link>

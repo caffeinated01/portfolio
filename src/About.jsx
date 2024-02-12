@@ -1,8 +1,8 @@
 function About(){
    return(
-      <>
-         <h1>About</h1>
-      </>
+      <div className="mx-5 flex flex-col justify-center items-center text-center">
+         <h1>about</h1>
+      </div>
    )
 }
 
