@@ -13,10 +13,10 @@ function Nav() {
     <>
       <nav className="flex justify-end pt-2">
         <div className="hidden w-full justify-between gap-4 md:flex">
-          <Link to="/">HOME</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/projects">PROJECTS</Link>
-          <Link to="/achievements">ACHIEVEMENTS</Link>
+          <Link to="/" className="hover:-translate-y-1 duration-150">HOME</Link>
+          <Link to="/about" className="hover:-translate-y-1 duration-150">ABOUT</Link>
+          <Link to="/projects" className="hover:-translate-y-1 duration-150">PROJECTS</Link>
+          <Link to="/achievements" className="hover:-translate-y-1 duration-150">ACHIEVEMENTS</Link>
         </div>
         <div className="md:hidden">
           <button className="text-2xl pt-1" onClick={toggleNavbar}>

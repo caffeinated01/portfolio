@@ -11,6 +11,10 @@ export default {
         inter: ["Inter", "sans-serif"],
         pixelify: ["Pixelify Sans", "sans-serif"],
         cookie: ["Cookie", "cursive"]
+      },
+      colors: {
+        primary: "#ececed",
+        background: "#131213"
       }
     },
   },

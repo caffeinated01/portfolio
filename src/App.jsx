@@ -4,11 +4,24 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Achievements from "./Achievements";
+import Lenis from "@studio-freight/lenis";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis()
+    
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
+
   return (
     <>
-      <div className="bg-[#131213] max-w-screen min-h-screen select-none text-[#ececed]">
+      <div className="bg-background max-w-screen min-h-screen select-none text-primary">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
