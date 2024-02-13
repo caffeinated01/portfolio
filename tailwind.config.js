@@ -10,8 +10,15 @@ export default {
         cookie: ["Cookie", "cursive"],
       },
       colors: {
-        primary: "#ececed",
-        background: "#131213",
+        primary: {
+          light: "131213",
+          dark: "#ececed",
+        },
+        secondary: {
+          light: "#474545",
+          dark: "#b8b8b8",
+        },
+        background: { light: "#ececed", dark: "#131213" },
       },
     },
   },

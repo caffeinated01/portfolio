@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Achievements from "./Achievements";
 import Lenis from "@studio-freight/lenis";
 import { useEffect, useState } from "react";
+import School from "./School";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -24,11 +25,12 @@ function App() {
   return (
     <>
       <div className={darkMode ? "dark" : "light"}>
-        <div className="dark:bg-background light:bg-primary max-w-screen min-h-screen select-none dark:text-primary light:text-background">
-          <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
+        <div className="dark:bg-background-dark bg-background-light max-w-screen min-h-screen select-none font-inter dark:text-primary-dark text-primary-light">
+          <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/school" element={<School />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/achievements" element={<Achievements />} />
           </Routes>

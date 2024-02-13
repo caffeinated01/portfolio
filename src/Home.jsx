@@ -2,7 +2,7 @@ function Home() {
   return (
     <div className="mx-5 flex flex-col justify-center items-center h-[90vh] text-center">
       <h1 className="font-bodoniModa text-5xl font-bold">JAVIER</h1>
-      <h1 className="font-bodoniModa text-5xl">ASPIRING FRONTEND</h1>
+      <h1 className="font-bodoniModa text-5xl">ASPIRING FRONT-END</h1>
       <h1 className="font-pixelify text-5xl">
         DEVELOPER <span className="font-bodoniModa">&</span>
       </h1>
