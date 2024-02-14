@@ -6,7 +6,6 @@ import DataScienceHackathonPDF from "../public/pictures/vjcxtp-slides.pdf";
 import DecryptedImg1 from "../public/pictures/oxd-1.jpg";
 import DecryptedImg2 from "../public/pictures/oxd-2.jpg";
 import DecryptedImg3 from "../public/pictures/oxd-3.jpg";
-import DecryptedImg4 from "../public/pictures/oxd-4.jpg";
 import MazeMasterImg1 from "../public/pictures/mm-1.jpg";
 import MazeMasterImg2 from "../public/pictures/mm-2.jpg";
 import BlahajImg1 from "../public/pictures/blahaj-1.png";
@@ -17,6 +16,7 @@ function Achievements() {
     <div className="px-5 py-10 flex flex-col-reverse justify-center min-h-[90vh]">
       <Accordion
         items={["The Young Catalyst", "June 2022"]}
+        isLast={true}
         body={
           <div>
             <span className="text-base dark:text-secondary-dark text-secondary-light font-bold">
@@ -41,11 +41,11 @@ function Achievements() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={YoungCatalystCert}
                 ></img>
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={YoungCatalystImg1}
                 ></img>
               </div>
@@ -96,7 +96,7 @@ function Achievements() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={DataScienceHackathonCert}
                 ></img>
               </div>
@@ -133,20 +133,16 @@ function Achievements() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={DecryptedImg1}
                 ></img>
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={DecryptedImg2}
                 ></img>
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={DecryptedImg3}
-                ></img>
-                <img
-                  className="max-h-[300px] rounded-md object-scale-down"
-                  src={DecryptedImg4}
                 ></img>
               </div>
             </div>
@@ -180,11 +176,11 @@ function Achievements() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={MazeMasterImg1}
                 ></img>
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={MazeMasterImg2}
                 ></img>
               </div>
@@ -218,7 +214,7 @@ function Achievements() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <img
-                  className="max-h-[300px] rounded-md object-scale-down"
+                  className="max-h-[300px] object-scale-down"
                   src={BlahajImg1}
                 ></img>
               </div>

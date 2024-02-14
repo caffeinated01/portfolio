@@ -4,7 +4,7 @@ function Accordion(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-y dark:border-primary-dark border-primary-light">
+    <div className={`${props.isLast ? "border-y" : "border-t" } dark:border-primary-dark border-primary-light`}>
       <button className={`flex justify-between w-full dark:hover:bg-background-light dark:hover:text-primary-light hover:bg-background-dark hover:text-primary-dark px-2 py-1 hover:px-5 transition-all duration-200 ${isOpen ? "dark:bg-background-light dark:text-primary-light bg-background-dark text-primary-dark px-5" : ""}`} onClick={() => setIsOpen(!isOpen)}>
         {props.items.map((item, idx) => (
           <span key={idx}>{item}</span>
