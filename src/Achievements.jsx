@@ -14,7 +14,7 @@ import { LuDownload } from "react-icons/lu";
 
 function Achievements() {
   return (
-    <div className="p-5 flex flex-col-reverse justify-center min-h-[90vh]">
+    <div className="px-5 py-10 flex flex-col-reverse justify-center min-h-[90vh]">
       <Accordion
         items={["The Young Catalyst", "June 2022"]}
         body={
