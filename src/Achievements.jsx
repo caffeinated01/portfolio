@@ -17,7 +17,7 @@ function Achievements() {
   return (
     <div className="px-5 py-10 flex flex-col justify-center min-h-[90vh]">
       <div className="flex justify-between w-full text-xs dark:text-secondary-dark text-secondary-light px-2 py-1">
-        <h1>COMPETITION</h1>
+        <h1>EVENT</h1>
         <h1>DATE</h1>
       </div>
       <Accordion
@@ -217,7 +217,6 @@ function Achievements() {
       />
       <Accordion
         items={["BuildingBloCS: Blåhaj CTF", "December 2023"]}
-        isLast={true}
         body={
           <div>
             <span className="text-base dark:text-secondary-dark text-secondary-light font-bold">
@@ -239,6 +238,30 @@ function Achievements() {
                   src={BlahajImg1}
                 ></img>
               </div>
+            </div>
+          </div>
+        }
+      />
+      <Accordion
+        items={["HACK@AC","February 2024"]}
+        body={
+          <div>
+            <span className="text-base dark:text-secondary-dark text-secondary-light font-bold">
+              UPCOMING
+            </span>
+            <div className="space-y-5">
+              <p>
+                HACK@AC is a Capture-The-Flag competition, where participants
+                play to earn points by solving problems relating to
+                cryptography, data security, and other prominent cybersecurity
+                issues.
+              </p>
+              {/* <div className="flex flex-wrap gap-2">
+                <img
+                  className="max-h-[300px] object-scale-down"
+                  src={}
+                ></img>
+              </div> */}
             </div>
           </div>
         }
