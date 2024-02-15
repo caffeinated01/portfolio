@@ -2,6 +2,8 @@ import Accordion from "./Components/Accordion";
 import YoungCatalystCert from "/yc-cert.jpeg";
 import YoungCatalystImg1 from "/yc-1.jpg";
 import DataScienceHackathonCert from "/vjcxtp-cert.jpeg";
+import DataScienceHackathonImg1 from "/vjcxtp-1.jpeg";
+import DataScienceHackathonImg2 from "/vjcxtp-2.jpeg";
 import DataScienceHackathonPDF from "/vjcxtp-slides.pdf";
 import DecryptedImg1 from "/oxd-1.jpg";
 import DecryptedImg2 from "/oxd-2.jpg";
@@ -13,10 +15,13 @@ import { LuDownload } from "react-icons/lu";
 
 function Achievements() {
   return (
-    <div className="px-5 py-10 flex flex-col-reverse justify-center min-h-[90vh]">
+    <div className="px-5 py-10 flex flex-col justify-center min-h-[90vh]">
+      <div className="flex justify-between w-full text-xs dark:text-secondary-dark text-secondary-light px-2 py-1">
+        <h1>COMPETITION</h1>
+        <h1>DATE</h1>
+      </div>
       <Accordion
         items={["The Young Catalyst", "June 2022"]}
-        isLast={true}
         body={
           <div>
             <span className="text-base dark:text-secondary-dark text-secondary-light font-bold">
@@ -111,6 +116,14 @@ function Achievements() {
                   className="max-h-[300px] object-scale-down"
                   src={DataScienceHackathonCert}
                 ></img>
+                <img
+                  className="max-h-[300px] object-scale-down"
+                  src={DataScienceHackathonImg1}
+                ></img>
+                <img
+                  className="max-h-[300px] object-scale-down"
+                  src={DataScienceHackathonImg2}
+                ></img>
               </div>
             </div>
           </div>
@@ -204,6 +217,7 @@ function Achievements() {
       />
       <Accordion
         items={["BuildingBloCS: Blåhaj CTF", "December 2023"]}
+        isLast={true}
         body={
           <div>
             <span className="text-base dark:text-secondary-dark text-secondary-light font-bold">
@@ -229,10 +243,6 @@ function Achievements() {
           </div>
         }
       />
-      <div className="flex justify-between w-full text-xs dark:text-secondary-dark text-secondary-light px-2 py-1">
-        <h1>COMPETITION</h1>
-        <h1>DATE</h1>
-      </div>
     </div>
   );
 }
