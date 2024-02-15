@@ -1,14 +1,14 @@
 import Accordion from "./Components/Accordion";
-import YoungCatalystCert from "../public/pictures/yc-cert.jpeg";
-import YoungCatalystImg1 from "../public/pictures/yc-1.jpg";
-import DataScienceHackathonCert from "../public/pictures/vjcxtp-cert.jpeg";
-import DataScienceHackathonPDF from "../public/pictures/vjcxtp-slides.pdf";
-import DecryptedImg1 from "../public/pictures/oxd-1.jpg";
-import DecryptedImg2 from "../public/pictures/oxd-2.jpg";
-import DecryptedImg3 from "../public/pictures/oxd-3.jpg";
-import MazeMasterImg1 from "../public/pictures/mm-1.jpg";
-import MazeMasterImg2 from "../public/pictures/mm-2.jpg";
-import BlahajImg1 from "../public/pictures/blahaj-1.png";
+import YoungCatalystCert from "/yc-cert.jpeg";
+import YoungCatalystImg1 from "/yc-1.jpg";
+import DataScienceHackathonCert from "/vjcxtp-cert.jpeg";
+import DataScienceHackathonPDF from "/vjcxtp-slides.pdf";
+import DecryptedImg1 from "/oxd-1.jpg";
+import DecryptedImg2 from "/oxd-2.jpg";
+import DecryptedImg3 from "/oxd-3.jpg";
+import MazeMasterImg1 from "/mm-1.jpg";
+import MazeMasterImg2 from "/mm-2.jpg";
+import BlahajImg1 from "/blahaj-1.png";
 import { LuDownload } from "react-icons/lu";
 
 function Achievements() {
@@ -29,6 +29,18 @@ function Achievements() {
                 immediate environment. Students are required to make their own
                 Micro:bit contraption using recycled materials to simulate a
                 solution to a problem they have brought up.
+              </p>
+              <p>
+                Having little experience in prototyping, it was challenging for
+                us to design a contraption. Prior to this, my only experience in
+                prototyping was in lower secondary D&T class. So, to be
+                challenged into coming up with our own contraption was not easy
+                for me.
+              </p>
+              <p>
+                My team decided to work on different parts of the contraption
+                simultaneously. I worked on the Micro:bit code, while my
+                teammate worked on bringing the cardboard contraption to live.
               </p>
               <p>
                 My team made a contraption to cool classrooms down using a
@@ -165,14 +177,16 @@ function Achievements() {
               <p>
                 With little to no experience with robotics, I led my team to
                 read up the documentation for mbot2, and started piecing
-                together parts of the algorithm. By the end of day 1, our robot
-                was already completed, with the alogrithm being the most
-                efficient we could make it.
+                together parts of the algorithm. I faced many difficulties along
+                the way due to the documentation being quite unclear, but
+                through trial and error, our alogrithm was completed by day 1.
               </p>
               <p>
-                During the actual competition, our robot completed the maze
-                faster than we had expected, securing us a third place in the
-                competition, beating many strong opponents.
+                During the actual competition, our robot initially ran into
+                issues, such as the sensor not being calibrated. We were quick
+                to troubleshoot, not panicking under pressure. Our robot
+                completed the maze faster than we had expected, securing us a
+                third place in the competition, beating many strong opponents.
               </p>
               <div className="flex flex-wrap gap-2">
                 <img
@@ -201,14 +215,7 @@ function Achievements() {
                 whopping 12 hours.
               </p>
               <p>
-                With little to no experience with robotics, I led my team to
-                read up the documentation for mbot2, and started piecing
-                together parts of the algorithm. By the end of day 1, our robot
-                was already completed, with the alogrithm being the most
-                efficient we could make it.
-              </p>
-              <p>
-                This 12-hour marathon pushed the boundaries of my technical
+                This 12-hour marathon pushed the boundaries of our technical
                 skills, collaboration, and problem-solving abilities. However,
                 our team fell short and did not manage to get a good placement.
               </p>
