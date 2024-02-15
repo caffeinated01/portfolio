@@ -16,7 +16,6 @@ function Header(props) {
   const links = [
     { display: "HOME", endpoint: "/" },
     { display: "ABOUT", endpoint: "/about" },
-    { display: "SCHOOL", endpoint: "/school" },
     { display: "PROJECTS", endpoint: "/projects" },
     { display: "ACHIEVEMENTS", endpoint: "/achievements" },
   ];
