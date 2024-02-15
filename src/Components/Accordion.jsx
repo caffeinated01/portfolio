@@ -17,7 +17,7 @@ function Accordion(props) {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden text-3xl">
+        <div className="overflow-hidden text-2xl">
           <div className="pt-1 pb-10 px-2">
             {props.body}
           </div>
