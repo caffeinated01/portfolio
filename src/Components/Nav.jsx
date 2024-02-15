@@ -8,11 +8,7 @@ function Nav(props) {
       <nav className="flex justify-end">
         <div className="hidden w-full justify-between gap-4 md:flex">
           {props.links.map((link, idx) => (
-            <Link
-              key={idx}
-              to={link.endpoint}
-              className="hover:-translate-y-1 duration-150"
-            >
+            <Link key={idx} to={link.endpoint}>
               {link.display}
             </Link>
           ))}
