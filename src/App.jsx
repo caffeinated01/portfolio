@@ -6,7 +6,6 @@ import Projects from "./Projects";
 import Achievements from "./Achievements";
 import Lenis from "@studio-freight/lenis";
 import { useEffect, useState } from "react";
-import School from "./School";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -30,7 +29,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/school" element={<School />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/achievements" element={<Achievements />} />
           </Routes>
