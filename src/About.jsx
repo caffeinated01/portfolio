@@ -28,7 +28,7 @@ function About() {
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="p-5 flex flex-col justify-center gap-5 min-h-[90vh]">
+      <div className="p-5 flex flex-col justify-center items-center gap-5 min-h-[90vh]">
         {aboutParas.map((para, idx) => (
           <AboutP key={idx} title={para.title} body={para.body} />
         ))}
