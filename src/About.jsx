@@ -1,4 +1,5 @@
 import AboutP from "./Components/AboutP";
+import { motion } from "framer-motion";
 
 function About() {
   const aboutParas = [
@@ -21,13 +22,18 @@ function About() {
   ];
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="p-5 flex flex-col justify-center gap-5 min-h-[90vh]">
         {aboutParas.map((para, idx) => (
           <AboutP key={idx} title={para.title} body={para.body} />
         ))}
       </div>
-    </>
+    </motion.div>
   );
 }
 
