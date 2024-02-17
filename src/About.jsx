@@ -1,6 +1,102 @@
 import AboutP from "./Components/AboutP";
+import {
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+  FaLinux,
+  FaRaspberryPi,
+  FaDocker,
+  FaDiscord,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiJavascript,
+  SiGnubash,
+  SiVisualstudiocode,
+  SiBrave,
+  SiSpotify,
+  SiIterm2,
+} from "react-icons/si";
+import { RiFileExcel2Fill } from "react-icons/ri";
 
 function About() {
+  const technologies = [
+    {
+      name: "Python",
+      icon: <FaPython />,
+    },
+    {
+      name: "Javascript",
+      icon: <SiJavascript />,
+    },
+    {
+      name: "React",
+      icon: <FaReact />,
+    },
+    {
+      name: "HTML",
+      icon: <FaHtml5 />,
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt />,
+    },
+    {
+      name: "Tailwind",
+      icon: <SiTailwindcss />,
+    },
+    {
+      name: "Git",
+      icon: <FaGitAlt />,
+    },
+    {
+      name: "Github",
+      icon: <FaGithub />,
+    },
+    {
+      name: "Shell",
+      icon: <SiGnubash />,
+    },
+    {
+      name: "Linux",
+      icon: <FaLinux />,
+    },
+    {
+      name: "Docker",
+      icon: <FaDocker />,
+    },
+    {
+      name: "Raspberry Pi",
+      icon: <FaRaspberryPi />,
+    },
+    {
+      name: "Excel",
+      icon: <RiFileExcel2Fill />,
+    },
+  ];
+
+  const tools = [
+    {
+      name: "Visual Studio Code",
+      icon: <SiVisualstudiocode />,
+    },
+    {
+      name: "iTerm",
+      icon: <SiIterm2 />,
+    },
+    {
+      name: "Brave",
+      icon: <SiBrave />,
+    },
+    {
+      name: "Spotify",
+      icon: <SiSpotify />,
+    },
+  ];
+
   const aboutParas = [
     {
       title: "A short intro",
@@ -18,11 +114,45 @@ function About() {
       title: "Leadership",
       body: "As the HOD of Xinmin's Media Club Video Department, I have been instrumental in driving creativity and excellence, leading teams in producing videos for national competitions. By embracing innovation and creativity, I've contributed to the department's ability to create quality productions.",
     },
+    {
+      title: "Technologies",
+      body: (
+        <>
+          {technologies.map((technology, idx) => (
+            // TODO: Clean up styling over here
+            // TODO: Add reveal animations with framer motion
+            <div>
+              <h1>{technology.name}</h1>
+              <div className="dark:text-secondary-dark text-secondary-light">
+                {technology.icon}
+              </div>
+            </div>
+          ))}
+        </>
+      ),
+    },
+    {
+      title: "Tools",
+      body: (
+        <>
+          {tools.map((tool, idx) => (
+            // TODO: Clean up styling over here
+            // TODO: Add reveal animations with framer motion
+            <div>
+              <h1>{tool.name}</h1>
+              <div className="dark:text-secondary-dark text-secondary-light">
+                {tool.icon}
+              </div>
+            </div>
+          ))}
+        </>
+      ),
+    },
   ];
 
   return (
     <>
-      <div className="p-5 flex flex-col justify-center items-center gap-5 min-h-[90vh]">
+      <div className="p-5 flex flex-col justify-center items-center gap-10 min-h-[90vh]">
         {aboutParas.map((para, idx) => (
           <AboutP key={idx} title={para.title} body={para.body} />
         ))}
