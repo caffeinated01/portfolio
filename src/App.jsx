@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Achievements from "./Achievements";
 import Lenis from "@studio-freight/lenis";
 import { AnimatePresence } from "framer-motion";
+import Transition from "./Components/Transition";
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -30,10 +31,19 @@ function App() {
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <AnimatePresence mode="wait" initial={false}>
             <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/achievements" element={<Achievements />} />
+              <Route path="/" element={<Transition component={<Home />} />} />
+              <Route
+                path="/about"
+                element={<Transition component={<About />} />}
+              />
+              <Route
+                path="/projects"
+                element={<Transition component={<Projects />} />}
+              />
+              <Route
+                path="/achievements"
+                element={<Transition component={<Achievements />} />}
+              />
             </Routes>
           </AnimatePresence>
         </div>

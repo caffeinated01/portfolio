@@ -12,16 +12,10 @@ import MazeMasterImg1 from "/mm-1.jpg";
 import MazeMasterImg2 from "/mm-2.jpg";
 import BlahajImg1 from "/blahaj-1.png";
 import { LuDownload } from "react-icons/lu";
-import { motion } from "framer-motion";
 
 function Achievements() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -50 }}
-      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-    >
+    <>
       <div className="px-5 py-10 flex flex-col justify-center min-h-[90vh]">
         <div className="flex justify-between w-full text-xs dark:text-secondary-dark text-secondary-light px-2 py-1">
           <h1>EVENT</h1>
@@ -278,7 +272,7 @@ function Achievements() {
           }
         />
       </div>
-    </motion.div>
+    </>
   );
 }
 
