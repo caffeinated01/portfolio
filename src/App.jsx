@@ -29,7 +29,7 @@ function App() {
       <div className={darkMode ? "dark" : "light"}>
         <div className="dark:bg-background-dark bg-background-light max-w-screen min-h-screen select-none font-inter dark:text-primary-dark text-primary-light">
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-          <AnimatePresence mode="wait" initial={false}>
+          <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Transition component={<Home />} />} />
               <Route

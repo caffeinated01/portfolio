@@ -1,4 +1,5 @@
 import Accordion from "./Components/Accordion";
+import Reveal from "./Components/Reveal";
 import YoungCatalystCert from "/yc-cert.jpeg";
 import YoungCatalystImg1 from "/yc-1.jpg";
 import DataScienceHackathonCert from "/vjcxtp-cert.jpeg";
@@ -11,7 +12,6 @@ import DecryptedImg3 from "/oxd-3.jpg";
 import MazeMasterImg1 from "/mm-1.jpg";
 import MazeMasterImg2 from "/mm-2.jpg";
 import BlahajImg1 from "/blahaj-1.png";
-import { LuDownload } from "react-icons/lu";
 
 function Achievements() {
   return (
@@ -58,14 +58,22 @@ function Achievements() {
                   and comfortable.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={YoungCatalystCert}
-                  ></img>
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={YoungCatalystImg1}
-                  ></img>
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={YoungCatalystCert}
+                      ></img>
+                    }
+                  />
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={YoungCatalystImg1}
+                      ></img>
+                    }
+                  />
                 </div>
               </div>
             </div>
@@ -103,30 +111,42 @@ function Achievements() {
                   Additionally, build a predictive model to estimate the energy
                   efficiency of a house based on its features.
                 </p>
-                <p className="flex gap-2">
+                <p>
                   We also had to present our data in the form of slides, which
-                  you can download here.
+                  you can download {/* <span className=""> */}
                   <a
                     className="dark:text-secondary-dark text-secondary-light"
                     href={DataScienceHackathonPDF}
                     download
                   >
-                    <LuDownload />
+                    here.
                   </a>
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={DataScienceHackathonCert}
-                  ></img>
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={DataScienceHackathonImg1}
-                  ></img>
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={DataScienceHackathonImg2}
-                  ></img>
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={DataScienceHackathonCert}
+                      ></img>
+                    }
+                  />
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={DataScienceHackathonImg1}
+                      ></img>
+                    }
+                  />
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={DataScienceHackathonImg2}
+                      ></img>
+                    }
+                  />
                 </div>
               </div>
             </div>
@@ -160,18 +180,30 @@ function Achievements() {
                   first place.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={DecryptedImg1}
-                  ></img>
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={DecryptedImg2}
-                  ></img>
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={DecryptedImg3}
-                  ></img>
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={DecryptedImg1}
+                      ></img>
+                    }
+                  />
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={DecryptedImg2}
+                      ></img>
+                    }
+                  />
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={DecryptedImg3}
+                      ></img>
+                    }
+                  />
                 </div>
               </div>
             </div>
@@ -206,14 +238,22 @@ function Achievements() {
                   third place in the competition, beating many strong opponents.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={MazeMasterImg1}
-                  ></img>
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={MazeMasterImg2}
-                  ></img>
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={MazeMasterImg1}
+                      ></img>
+                    }
+                  />
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={MazeMasterImg2}
+                      ></img>
+                    }
+                  />
                 </div>
               </div>
             </div>
@@ -238,10 +278,14 @@ function Achievements() {
                   placement.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <img
-                    className="max-h-[300px] object-scale-down"
-                    src={BlahajImg1}
-                  ></img>
+                  <Reveal
+                    component={
+                      <img
+                        className="max-h-[300px] object-scale-down"
+                        src={BlahajImg1}
+                      ></img>
+                    }
+                  />
                 </div>
               </div>
             </div>

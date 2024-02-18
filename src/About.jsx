@@ -1,4 +1,5 @@
 import AboutP from "./Components/AboutP";
+import Reveal from "./Components/Reveal";
 import {
   FaPython,
   FaHtml5,
@@ -16,11 +17,7 @@ import {
   SiJavascript,
   SiGnubash,
   SiVisualstudiocode,
-  SiBrave,
-  SiSpotify,
-  SiIterm2,
 } from "react-icons/si";
-import { RiFileExcel2Fill } from "react-icons/ri";
 
 function About() {
   const technologies = [
@@ -61,6 +58,10 @@ function About() {
       icon: <SiGnubash />,
     },
     {
+      name: "Visual Studio Code",
+      icon: <SiVisualstudiocode />,
+    },
+    {
       name: "Linux",
       icon: <FaLinux />,
     },
@@ -71,29 +72,6 @@ function About() {
     {
       name: "Raspberry Pi",
       icon: <FaRaspberryPi />,
-    },
-    {
-      name: "Excel",
-      icon: <RiFileExcel2Fill />,
-    },
-  ];
-
-  const tools = [
-    {
-      name: "Visual Studio Code",
-      icon: <SiVisualstudiocode />,
-    },
-    {
-      name: "iTerm",
-      icon: <SiIterm2 />,
-    },
-    {
-      name: "Brave",
-      icon: <SiBrave />,
-    },
-    {
-      name: "Spotify",
-      icon: <SiSpotify />,
     },
   ];
 
@@ -117,42 +95,30 @@ function About() {
     {
       title: "Technologies",
       body: (
-        <>
+        <div className="flex flex-wrap gap-5">
           {technologies.map((technology, idx) => (
             // TODO: Clean up styling over here
             // TODO: Add reveal animations with framer motion
-            <div>
-              <h1>{technology.name}</h1>
-              <div className="dark:text-secondary-dark text-secondary-light">
-                {technology.icon}
-              </div>
-            </div>
+            <Reveal
+              component={
+                <div id={idx} className="flex flex-row gap-2">
+                  <h1>{technology.name}</h1>
+                  <div className="dark:text-secondary-dark text-secondary-light">
+                    {technology.icon}
+                  </div>
+                </div>
+              }
+            />
           ))}
-        </>
-      ),
-    },
-    {
-      title: "Tools",
-      body: (
-        <>
-          {tools.map((tool, idx) => (
-            // TODO: Clean up styling over here
-            // TODO: Add reveal animations with framer motion
-            <div>
-              <h1>{tool.name}</h1>
-              <div className="dark:text-secondary-dark text-secondary-light">
-                {tool.icon}
-              </div>
-            </div>
-          ))}
-        </>
+        </div>
       ),
     },
   ];
 
   return (
     <>
-      <div className="p-5 flex flex-col justify-center items-center gap-10 min-h-[90vh]">
+      {/* TODO: Add "skills" section */}
+      <div className="p-5 py-12 flex flex-col justify-center items-center gap-12 min-h-[90vh]">
         {aboutParas.map((para, idx) => (
           <AboutP key={idx} title={para.title} body={para.body} />
         ))}
