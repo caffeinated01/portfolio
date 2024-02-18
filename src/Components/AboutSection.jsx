@@ -1,4 +1,4 @@
-function AboutP(props) {
+function AboutSection(props) {
   return (
     <h1 className="text-3xl flex flex-col max-w-[1300px]">
       <span className="text-base dark:text-secondary-dark text-secondary-light font-bold">
@@ -9,4 +9,4 @@ function AboutP(props) {
   );
 }
 
-export default AboutP;
+export default AboutSection;

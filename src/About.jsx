@@ -1,4 +1,4 @@
-import AboutP from "./Components/AboutP";
+import AboutSection from "./Components/AboutSection";
 import Reveal from "./Components/Reveal";
 import {
   FaPython,
@@ -87,8 +87,6 @@ function About() {
       body: (
         <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-5">
           {technologies.map((technology, idx) => (
-            // TODO: Clean up styling over here
-            // TODO: Add reveal animations with framer motion
             <Reveal
               component={
                 <div id={idx} className="flex flex-row gap-2">
@@ -107,11 +105,10 @@ function About() {
 
   return (
     <>
-      {/* TODO: Add "skills" section */}
       <div className="p-5 py-12 flex justify-center items-center min-h-[90vh]">
         <div className="flex flex-col gap-12">
           {aboutParas.map((para, idx) => (
-            <AboutP key={idx} title={para.title} body={para.body} />
+            <AboutSection key={idx} title={para.title} body={para.body} />
           ))}
         </div>
       </div>
