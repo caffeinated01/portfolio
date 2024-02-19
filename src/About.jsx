@@ -12,6 +12,7 @@ import {
   FaDocker,
 } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiGnubash } from "react-icons/si";
+import PlaceholderProfileImg from "/oxd-4.jpg";
 
 function About() {
   const technologies = [
@@ -106,7 +107,17 @@ function About() {
 
   return (
     <>
-      <div className="p-5 py-12 flex justify-center items-center min-h-[90vh]">
+      <div className="p-5 py-12 flex flex-col gap-5 justify-center items-center min-h-[90vh]">
+        <div>
+          <Reveal
+            component={
+              <img
+                className="w-[200px] h-[200px] rounded-full object-cover"
+                src={PlaceholderProfileImg}
+              ></img>
+            }
+          />
+        </div>
         <div className="flex flex-col gap-12">
           {aboutParas.map((para, idx) => (
             <AboutSection key={idx} title={para.title} body={para.body} />

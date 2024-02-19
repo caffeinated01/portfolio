@@ -1,4 +1,5 @@
 import About from "./About";
+import { BsMouse } from "react-icons/bs";
 
 function Home() {
   return (
@@ -15,6 +16,9 @@ function Home() {
           STUDENT <span className="pl-3 font-bodoniModa font-semibold">IN</span>
         </h1>
         <h1 className="font-bodoniModa text-5xl font-semibold">SINGAPORE</h1>
+        <div className="py-6">
+          <BsMouse size={30} className="animate-bounce" />
+        </div>
       </div>
       <About />
     </>

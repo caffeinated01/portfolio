@@ -5,6 +5,7 @@ function Reveal(props) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const animator = useAnimation();
+  const delay = props.delay ? props.delay : 0.25;
 
   useEffect(() => {
     if (isInView) {
@@ -21,7 +22,7 @@ function Reveal(props) {
         }}
         initial="hidden"
         animate={animator}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: delay }}
       >
         {props.component}
       </motion.div>
