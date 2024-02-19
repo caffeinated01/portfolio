@@ -1,5 +1,5 @@
-import Accordion from "./Components/Accordion";
-import Reveal from "./Components/Reveal";
+import Accordion from "../Components/ui/Accordion";
+import Reveal from "../Components/utils/Reveal";
 import YoungCatalystCert from "/yc-cert.jpeg";
 import YoungCatalystImg1 from "/yc-1.jpg";
 import DataScienceHackathonCert from "/vjcxtp-cert.jpeg";

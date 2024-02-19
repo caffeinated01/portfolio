@@ -1,11 +1,11 @@
-import Header from "./Components/Header";
-import Home from "./Home";
-import Projects from "./Projects";
-import Achievements from "./Achievements";
-import NotFound from "./NotFound";
+import Header from "./Components/ui/Header";
+import Home from "./views/Home";
+import Projects from "./views/Projects";
+import Achievements from "./views/Achievements";
+import NotFound from "./views/NotFound";
 import Lenis from "@studio-freight/lenis";
 import { AnimatePresence } from "framer-motion";
-import Transition from "./Components/Transition";
+import Transition from "./Components/utils/Transition";
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 

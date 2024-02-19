@@ -1,5 +1,5 @@
-import Accordion from "./Components/Accordion";
-import Reveal from "./Components/Reveal";
+import Accordion from "../Components/ui/Accordion";
+import Reveal from "../Components/utils/Reveal";
 
 function Projects() {
   return (

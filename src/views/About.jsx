@@ -1,5 +1,5 @@
-import AboutSection from "./Components/AboutSection";
-import Reveal from "./Components/Reveal";
+import AboutSection from "../Components/ui/AboutSection";
+import Reveal from "../Components/utils/Reveal";
 import {
   FaPython,
   FaHtml5,
