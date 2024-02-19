@@ -1,6 +1,5 @@
 import Header from "./Components/Header";
 import Home from "./Home";
-import About from "./About";
 import Projects from "./Projects";
 import Achievements from "./Achievements";
 import Lenis from "@studio-freight/lenis";
@@ -27,7 +26,7 @@ function App() {
   return (
     <>
       <div className={darkMode ? "dark" : "light"}>
-        <div className="dark:bg-background-dark bg-background-light max-w-screen min-h-screen select-none font-mplus dark:text-primary-dark text-primary-light">
+        <div className="dark:bg-background-dark bg-background-light select-none max-w-screen min-h-screen font-mplus dark:text-primary-dark text-primary-light">
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
