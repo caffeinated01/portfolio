@@ -91,7 +91,7 @@ function About() {
             <Reveal
               key={idx}
               component={
-                <div id={idx} className="flex flex-row gap-2">
+                <div id={idx} className="flex flex-row font-pixelify gap-2">
                   <h1>{technology.name}</h1>
                   <div className="dark:text-secondary-dark text-secondary-light">
                     {technology.icon}

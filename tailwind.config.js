@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         bodoniModa: ["Bodoni Moda", "serif"],
+        mplus: ["'M PLUS Rounded 1c'", "Verdana", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         pixelify: ["Pixelify Sans", "sans-serif"],
         cookie: ["Cookie", "cursive"],

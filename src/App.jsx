@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <div className={darkMode ? "dark" : "light"}>
-        <div className="dark:bg-background-dark bg-background-light max-w-screen min-h-screen select-none font-inter dark:text-primary-dark text-primary-light">
+        <div className="dark:bg-background-dark bg-background-light max-w-screen min-h-screen select-none font-mplus dark:text-primary-dark text-primary-light">
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
