@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import Home from "./Home";
 import Projects from "./Projects";
 import Achievements from "./Achievements";
+import NotFound from "./NotFound";
 import Lenis from "@studio-freight/lenis";
 import { AnimatePresence } from "framer-motion";
 import Transition from "./Components/Transition";
@@ -39,6 +40,7 @@ function App() {
                 path="/achievements"
                 element={<Transition component={<Achievements />} />}
               />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
         </div>
