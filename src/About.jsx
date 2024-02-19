@@ -112,7 +112,7 @@ function About() {
           <Reveal
             component={
               <img
-                className="w-[200px] h-[200px] rounded-full object-cover"
+                className="w-[200px] h-[200px] rounded-full object-cover border-2 dark:border-primary-dark border-primary-light"
                 src={PlaceholderProfileImg}
               ></img>
             }
