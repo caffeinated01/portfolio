@@ -88,6 +88,7 @@ function About() {
         <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-5">
           {technologies.map((technology, idx) => (
             <Reveal
+              key={idx}
               component={
                 <div id={idx} className="flex flex-row gap-2">
                   <h1>{technology.name}</h1>

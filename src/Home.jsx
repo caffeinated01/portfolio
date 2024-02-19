@@ -1,7 +1,9 @@
+import About from "./About";
+
 function Home() {
   return (
     <>
-      <div className="mx-5 flex flex-col justify-center items-center h-[90vh] text-center">
+      <div className="mx-5 flex flex-col justify-center items-center h-[100vh] text-center">
         <h1 className="font-bodoniModa text-5xl font-bold">JAVIER</h1>
         <h1 className="font-bodoniModa text-5xl font-semibold">
           ASPIRING FRONT-END
@@ -14,6 +16,7 @@ function Home() {
         </h1>
         <h1 className="font-bodoniModa text-5xl font-semibold">SINGAPORE</h1>
       </div>
+      <About />
     </>
   );
 }

@@ -33,10 +33,6 @@ function App() {
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Transition component={<Home />} />} />
               <Route
-                path="/about"
-                element={<Transition component={<About />} />}
-              />
-              <Route
                 path="/projects"
                 element={<Transition component={<Projects />} />}
               />
