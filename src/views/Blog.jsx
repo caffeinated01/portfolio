@@ -27,7 +27,9 @@ function Blog() {
   return (
     <>
       <div className="px-5 py-10 flex flex-col gap-10 justify-center items-center min-h-[90vh]">
-        <h1 className="text-3xl font-inter border-b-[1px]">Miscellaneous</h1>
+        <h1 className="text-base font-inter dark:text-secondary-dark text-secondary-light">
+          {"Miscellaneous;".toUpperCase()}
+        </h1>
         <div className="max-w-[700px] grid md:grid-cols-2 sm:grid-cols-1 gap-10">
           {misc.map((blog, idx) => (
             <div
@@ -58,7 +60,9 @@ function Blog() {
             </div>
           ))}
         </div>
-        <h1 className="text-3xl font-inter border-b-[1px]">Achievements</h1>
+        <h1 className="text-base font-inter dark:text-secondary-dark text-secondary-light">
+          {"Achievements;".toUpperCase()}
+        </h1>
         <div className="max-w-[700px] grid md:grid-cols-2 sm:grid-cols-1 gap-10">
           {achievements.map((blog, idx) => (
             <div
@@ -89,7 +93,9 @@ function Blog() {
             </div>
           ))}
         </div>
-        <h1 className="text-3xl font-inter border-b-[1px]">Projects</h1>
+        <h1 className="text-base font-inter dark:text-secondary-dark text-secondary-light">
+          {"Projects;".toUpperCase()}
+        </h1>
         <div className="max-w-[700px] grid md:grid-cols-2 sm:grid-cols-1 gap-10">
           {projects.map((blog, idx) => (
             <div
@@ -120,7 +126,9 @@ function Blog() {
             </div>
           ))}
         </div>
-        <h1 className="text-3xl font-inter border-b-[1px]">How-Tos</h1>
+        <h1 className="text-base font-inter dark:text-secondary-dark text-secondary-light">
+          {"How-to's;".toUpperCase()}
+        </h1>
         <div className="max-w-[700px] grid md:grid-cols-2 sm:grid-cols-1 gap-10">
           {howtos.map((blog, idx) => (
             <div
