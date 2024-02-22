@@ -2,12 +2,14 @@ import Header from "./Components/ui/Header";
 import Home from "./views/Home";
 import Projects from "./views/Projects";
 import Achievements from "./views/Achievements";
-import NotFound from "./views/NotFound";
+import NoMatch from "./views/NoMatch";
 import Lenis from "@studio-freight/lenis";
 import { AnimatePresence } from "framer-motion";
 import Transition from "./Components/utils/Transition";
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import Post from "./Components/ui/blog/Post";
+import Blog from "./views/Blog";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -40,7 +42,15 @@ function App() {
                 path="/achievements"
                 element={<Transition component={<Achievements />} />}
               />
-              <Route path="*" element={<NotFound />} />
+              <Route
+                path="blog"
+                element={<Transition component={<Blog />} />}
+              />
+              <Route
+                path="blog/:postName"
+                element={<Transition component={<Post />} />}
+              />
+              <Route path="*" element={<NoMatch />} />
             </Routes>
           </AnimatePresence>
         </div>

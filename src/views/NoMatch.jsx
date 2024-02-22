@@ -1,4 +1,4 @@
-function NotFound() {
+function NoMatch() {
   return (
     <>
       <div className="mx-5 flex flex-col justify-center items-center h-[90vh] text-center">
@@ -9,4 +9,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default NoMatch;
