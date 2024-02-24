@@ -24,6 +24,24 @@ function Blog() {
       thumbnail: "/vjcxtp-2.jpeg",
       tags: ["comp."],
     },
+    {
+      postName: "maze_master",
+      date: "21/10/23",
+      thumbnail: "/mm-1.jpg",
+      tags: ["comp."],
+    },
+    {
+      postName: "blåhaj_ctf",
+      date: "2/12/23",
+      thumbnail: "/blahaj-1.png",
+      tags: ["comp."],
+    },
+    {
+      postName: "hack@ac",
+      date: "24/2/24",
+      thumbnail: "/hac-1.png",
+      tags: ["comp.", "howto"],
+    },
   ];
   const projects = [];
   const howtos = [];
