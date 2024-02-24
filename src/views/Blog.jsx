@@ -34,12 +34,9 @@ function Blog() {
         <div className="max-w-[700px] grid md:grid-cols-2 sm:grid-cols-1 gap-10">
           {blogs.map((category) =>
             category.map((blog, idx) => (
-              <div
-                key={idx}
-                className="rounded-lg dark:bg-primary-dark bg-primary-light p-5"
-              >
+              <div key={idx} className="rounded-lg p-5">
                 <Link to={`/blog/${blog.postName}`}>
-                  <h1 className="text-base dark:text-secondary-light text-secondary-dark font-inter">
+                  <h1 className="text-base text-secondary-light dark:text-secondary-dark font-inter">
                     {blog.date}
                   </h1>
                   <Reveal
@@ -50,7 +47,7 @@ function Blog() {
                       ></img>
                     }
                   />
-                  <div className="flex flex-row gap-2 py-2 dark:text-primary-light text-primary-dark justify-between">
+                  <div className="flex flex-row gap-2 py-2 text-primary-light dark:text-primary-dark justify-between">
                     <span className="text-xl font-inter">
                       {blog.postName
                         .split("_")
@@ -58,7 +55,9 @@ function Blog() {
                         .join(" ")}
                     </span>
                     {blog.tags.map((tag) => (
-                      <span className="pt-[0.6px]">{tag}</span>
+                      <span className="pt-[0.6px] text-secondary-light dark:text-secondary-dark">
+                        {tag}
+                      </span>
                     ))}
                   </div>
                 </Link>
