@@ -1,7 +1,5 @@
 # Participant @ VJC & TP
 
-## June 2023
-
 <p>
 Data Science Hackathon is a three-day bootcamp jointly
 conducted by Temasek Polytechnic (TP) and Victoria Junior

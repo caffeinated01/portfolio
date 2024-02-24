@@ -1,7 +1,5 @@
 # Best Problem Statement
 
-## July 2022
-
 <img alt="Image" src="/yc-2.jpg">
 <p>
 ***The Young Catalyst*** is a platform for young minds to come
