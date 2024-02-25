@@ -12,7 +12,7 @@ This being my second online CTF, I did better than previous attempts at CTFs. I 
 # Writeup, "Txt2SVG"
 <p>Challenge description: <br>I made a webapp which can convert your text into a styled svg picture, but for some reason the comments that you can put in aren't in the final result. Why?</p>
 <p>Source structure: <br></p>
-<Code language="txt">
+<Code>
 .
 ├── Dockerfile
 ├── app.py
