@@ -5,7 +5,7 @@ function Blog() {
   const [blogs, setBlogs] = useState([
     {
       postName: "hello_world",
-      date: new Date("2024-02-22"),
+      date: new Date("2023-03-26"),
       thumbnail: "/hello_world.jpeg",
       tags: ["misc."],
     },
