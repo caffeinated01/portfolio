@@ -1,7 +1,5 @@
 import Header from "./Components/ui/Header";
 import Home from "./views/Home";
-import Projects from "./views/Projects";
-import Achievements from "./views/Achievements";
 import NoMatch from "./views/NoMatch";
 import Lenis from "@studio-freight/lenis";
 import { AnimatePresence } from "framer-motion";
@@ -34,14 +32,6 @@ function App() {
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Transition component={<Home />} />} />
-              <Route
-                path="/projects"
-                element={<Transition component={<Projects />} />}
-              />
-              <Route
-                path="/achievements"
-                element={<Transition component={<Achievements />} />}
-              />
               <Route
                 path="blog"
                 element={<Transition component={<Blog />} />}

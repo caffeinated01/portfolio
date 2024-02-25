@@ -28,6 +28,12 @@ function Blog() {
       tags: ["comp."],
     },
     {
+      postName: "orion_x_decrypted",
+      date: new Date("2023-09-08"),
+      thumbnail: "/oxd-4.jpg",
+      tags: ["comp."],
+    },
+    {
       postName: "vjc_x_tp_hackathon",
       date: new Date("2023-06-01"),
       thumbnail: "/vjcxtp-2.jpeg",
