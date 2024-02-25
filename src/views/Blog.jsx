@@ -64,7 +64,7 @@ function Blog() {
 
   return (
     <>
-      <div className="flex gap-1 justify-center items-center space-x-2">
+      <div className="flex gap-1 justify-center items-center space-x-2 pt-10">
         <span className="font-bodoniModa font-semibold text-4xl">JAVIER'S</span>
         <span className="font-pixelify text-5xl">BLOG</span>
       </div>
