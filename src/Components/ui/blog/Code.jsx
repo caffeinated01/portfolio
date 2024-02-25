@@ -1,12 +1,12 @@
-import { PrismLight } from "react-syntax-highlighter";
-import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Light } from "react-syntax-highlighter";
+import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark";
 
 function Code({ children, language }) {
   return (
     <div className="text-base">
-      <PrismLight style={materialDark} language={language}>
+      <Light style={atomOneDark} language={language}>
         {children}
-      </PrismLight>
+      </Light>
     </div>
   );
 }
