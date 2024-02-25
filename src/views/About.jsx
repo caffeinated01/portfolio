@@ -49,7 +49,7 @@ function About() {
       icon: <FaGithub />,
     },
     {
-      name: "Shell",
+      name: "CLI",
       icon: <SiGnubash />,
     },
     {
