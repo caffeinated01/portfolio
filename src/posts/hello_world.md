@@ -21,6 +21,6 @@ def thisIsACodeBlock():
    return "thisIsACodeBlock"
 </Code>
 
-<img alt="Image" src="/favicon.svg">
+<img alt="Image" src="/caffeinated01.png">
 
 </p>
