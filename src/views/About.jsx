@@ -110,14 +110,14 @@ function About() {
 
   return (
     <>
-      <div className="p-5 py-12 flex flex-col gap-5 justify-center items-center min-h-[90vh]">
+      <div className="py-12 flex flex-col gap-5 justify-center items-center min-h-[90vh]">
         <div>
           <img
             className="w-[200px] h-[200px] rounded-full object-cover border-2 dark:border-primary-dark border-primary-light"
             src={Icon}
           ></img>
         </div>
-        <div className="rounded-md dark:bg-background-light dark:text-primary-light italic bg-background-dark text-primary-dark px-5 py-2">
+        <div className="rounded-md dark:bg-background-light dark:text-primary-light italic bg-background-dark text-primary-dark px-3 py-2">
           <h1>"Hi, I'm Javier. Welcome to my site!"</h1>
         </div>
         <div className="flex flex-col gap-12">

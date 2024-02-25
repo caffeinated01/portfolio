@@ -13,15 +13,15 @@ function Blog() {
   ];
   const achievements = [
     {
-      postName: "the_young_catalyst",
-      date: "16/9/2022",
-      thumbnail: "/yc-1.jpg",
-      tags: ["comp."],
+      postName: "hack@ac",
+      date: "24/2/24",
+      thumbnail: "/hac-1.png",
+      tags: ["comp.", "howto"],
     },
     {
-      postName: "vjc_x_tp_hackathon",
-      date: "1/6/23",
-      thumbnail: "/vjcxtp-2.jpeg",
+      postName: "blåhaj_ctf",
+      date: "2/12/23",
+      thumbnail: "/blahaj-1.png",
       tags: ["comp."],
     },
     {
@@ -31,16 +31,16 @@ function Blog() {
       tags: ["comp."],
     },
     {
-      postName: "blåhaj_ctf",
-      date: "2/12/23",
-      thumbnail: "/blahaj-1.png",
+      postName: "vjc_x_tp_hackathon",
+      date: "1/6/23",
+      thumbnail: "/vjcxtp-2.jpeg",
       tags: ["comp."],
     },
     {
-      postName: "hack@ac",
-      date: "24/2/24",
-      thumbnail: "/hac-1.png",
-      tags: ["comp.", "howto"],
+      postName: "the_young_catalyst",
+      date: "16/9/2022",
+      thumbnail: "/yc-1.jpg",
+      tags: ["comp."],
     },
   ];
   const projects = [];
