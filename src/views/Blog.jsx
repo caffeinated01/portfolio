@@ -65,7 +65,7 @@ function Blog() {
     (blog) =>
       selectedCategory === "" ||
       selectedCategory === "all" ||
-      blog.tags.includes(selectedCategory)
+      blog.tags.includes(selectedCategory),
   );
 
   return (
@@ -77,7 +77,7 @@ function Blog() {
       <div className="flex flex-wrap justify-center items-center pt-10 gap-2">
         <button
           key="all"
-          className="text-base px-4 py-2 rounded-md bg-secondary-light dark:bg-secondary-dark text-primary-dark dark:text-primary-light font-pixelify hover:-translate-y-[3px] transition-transform duration-200 shadow-xl"
+          className="text-base px-4 py-2 rounded-md bg-secondary-light dark:bg-secondary-dark text-primary-dark dark:text-primary-light font-pixelify md:hover:-translate-y-[3px] transition-transform duration-200 shadow-xl"
           onClick={() => handleCategoryClick("all")}
         >
           All
@@ -85,7 +85,7 @@ function Blog() {
         {[...new Set(blogs.flatMap((blog) => blog.tags))].map((category) => (
           <button
             key={category}
-            className="text-base px-4 py-2 rounded-md bg-secondary-light dark:bg-secondary-dark text-primary-dark dark:text-primary-light font-pixelify hover:-translate-y-[3px] transition-transform duration-200 shadow-xl"
+            className="text-base px-4 py-2 rounded-md bg-secondary-light dark:bg-secondary-dark text-primary-dark dark:text-primary-light font-pixelify md:hover:-translate-y-[3px] transition-transform duration-200 shadow-xl"
             onClick={() => handleCategoryClick(category)}
           >
             {category[0].toUpperCase() + category.slice(1)}
