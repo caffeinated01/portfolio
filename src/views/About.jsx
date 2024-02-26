@@ -113,6 +113,7 @@ function About() {
       <div className="py-12 flex flex-col gap-5 justify-center items-center min-h-[90vh]">
         <div>
           <img
+            alt="icon"
             className="w-[200px] h-[200px] rounded-full object-cover border-2 dark:border-primary-dark border-primary-light"
             src={Icon}
           ></img>
