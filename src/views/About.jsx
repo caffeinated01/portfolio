@@ -73,7 +73,7 @@ function About() {
     },
     {
       title: "Personality",
-      body: "I bring a vibrant energy and a contagious optimism to every interaction. With a genuine and open heart, I can connect with others, spreading positivity. Whether it's sparking conversations or rallying my team towards a common goal, I approach each opportunity with enthusiasm and a can-do attitude. I'm also able to connect with others on a personal level. I actively listen to people's problems and offer support. ",
+      body: "I bring a vibrant energy and a contagious optimism to every interaction. With a genuine and open heart, I can connecting with others, spreading positivity. Whether it's sparking conversations or rallying my team towards a common goal, I approach each opportunity with enthusiasm and a can-do attitude. I'm also able to connect with others on a personal level. I actively listen to people's problems and offer support. ",
     },
     {
       title: "Academics",
