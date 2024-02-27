@@ -34,7 +34,7 @@ function Post() {
           <h1 className="font-inter text-3xl dark:text-secondary-dark text-secondary-light">
             {postDetails.title}
           </h1>
-          <div className="max-w-[1100px] w-full">
+          <div className="max-w-[900px] w-full">
             <Markdown
               options={{
                 overrides: {
