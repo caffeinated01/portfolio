@@ -1,6 +1,5 @@
 import About from "./About";
 import { BsMouse } from "react-icons/bs";
-import { Spotlight } from "../Components/ui/Spotlight";
 
 function Home() {
   return (
