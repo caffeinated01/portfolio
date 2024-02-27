@@ -6,10 +6,6 @@ function Home() {
   return (
     <>
       <div>
-        <Spotlight
-          className="-top-0 left-0 md:left-60 md:-top-20"
-          fill="gray"
-        />
         <div className="mx-5 flex flex-col justify-center items-center h-[100vh] text-center">
           <h1 className="font-inter text-5xl font-semibold">JAVIER</h1>
           <h1 className="font-bodoniModa text-5xl font-semibold">
