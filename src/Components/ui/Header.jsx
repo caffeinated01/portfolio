@@ -19,7 +19,7 @@ function Header(props) {
   ];
 
   return (
-    <header className="sticky top-0 z-[10] mx-auto flex w-full flex-wrap font-inter text-sm items-center justify-between px-6 py-2 dark:bg-background-dark bg-background-light">
+    <header className="sticky top-0 z-[10] mx-auto flex w-full flex-wrap font-inter text-sm items-center justify-between px-6 py-2 backdrop-blur-md">
       <Nav
         isOpen={isOpen}
         setIsOpen={setIsOpen}
