@@ -2,7 +2,7 @@
 
 <img alt="Image" src="/yc-2.jpg">
 <p>
-***The Young Catalyst*** is a platform for young minds to come
+The Young Catalyst is a platform for young minds to come
 together to design authentic and innovative solutions for
 their immediate environment. Students are required to make
 their own Micro:bit contraption using recycled materials to

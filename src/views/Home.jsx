@@ -1,5 +1,6 @@
 import About from "./About";
 import { BsMouse } from "react-icons/bs";
+import Competitions from "./Competitions";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
           </div>
         </div>
         <About />
+        <Competitions />
       </div>
     </>
   );

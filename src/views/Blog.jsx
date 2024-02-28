@@ -16,6 +16,12 @@ function Blog() {
       tags: ["misc."],
     },
     {
+      postName: "vjc_x_tp_hackathon_2024",
+      date: new Date("2024-03-14"),
+      thumbnail: "/upcoming.jpg",
+      tags: ["comp."],
+    },
+    {
       postName: "hack@ac",
       date: new Date("2024-02-24"),
       thumbnail: "/hac-1.png",
@@ -40,7 +46,7 @@ function Blog() {
       tags: ["comp."],
     },
     {
-      postName: "vjc_x_tp_hackathon",
+      postName: "vjc_x_tp_hackathon_2023",
       date: new Date("2023-06-01"),
       thumbnail: "/vjcxtp-2.jpeg",
       tags: ["comp."],
