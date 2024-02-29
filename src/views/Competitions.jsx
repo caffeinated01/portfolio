@@ -57,42 +57,47 @@ function Competitions() {
 
   return (
     <>
-      <div className=" py-12 flex flex-col gap-5 justify-center items-center min-h-[90vh]">
-        <ol className="relative border-s border-secondary-light dark:border-secondary-dark max-w-[850px]">
-          {competitions.map((comp, idx) => (
-            <li key={idx} className="py-2 ms-4">
-              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 dark:bg-primary-dark bg-primary-light border dark:border-background-dark border-background-light"></div>
-              <time className="mb-1 font-normal leading-none dark:text-secondary-dark text-secondary-light">
-                {comp.date.toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })}
-              </time>
-              <Reveal
-                component={
-                  <>
-                    <h1 className="text-2xl font-inter font-semibold text-gray-900 dark:text-white">
-                      {comp.postName
-                        .split("_")
-                        .map((word) => word[0].toUpperCase() + word.slice(1))
-                        .join(" ")}
-                    </h1>
-                    <p className="mb-1 text-base font-normal text-secondary-light dark:text-secondary-dark">
-                      {comp.description}
-                    </p>
-                  </>
-                }
-              />
-              <a
-                className="dark:text-primary-dark text-primary-light"
-                href={`/blog/${comp.postName}`}
-              >
-                Read more →
-              </a>
-            </li>
-          ))}
-        </ol>
+      <div className="px-5 py-12 flex flex-col gap-5 justify-center items-center min-h-[90vh]">
+        <div className="flex flex-col gap-2 justify-start items-start">
+          <span className="font-inter text-base dark:text-secondary-dark text-secondary-light font-bold">
+            COMPETITIONS;
+          </span>
+          <ol className="relative border-s border-secondary-light dark:border-secondary-dark max-w-[850px]">
+            {competitions.map((comp, idx) => (
+              <li key={idx} className="py-2 ms-4">
+                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 dark:bg-primary-dark bg-primary-light border dark:border-background-dark border-background-light"></div>
+                <time className="mb-1 font-normal leading-none dark:text-secondary-dark text-secondary-light">
+                  {comp.date.toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  })}
+                </time>
+                <Reveal
+                  component={
+                    <>
+                      <h1 className="text-2xl font-inter font-semibold text-gray-900 dark:text-white">
+                        {comp.postName
+                          .split("_")
+                          .map((word) => word[0].toUpperCase() + word.slice(1))
+                          .join(" ")}
+                      </h1>
+                      <p className="mb-1 text-base font-normal text-secondary-light dark:text-secondary-dark">
+                        {comp.description}
+                      </p>
+                    </>
+                  }
+                />
+                <a
+                  className="dark:text-primary-dark text-primary-light"
+                  href={`/blog/${comp.postName}`}
+                >
+                  Read more →
+                </a>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </>
   );
