@@ -4,12 +4,6 @@ import { Link } from "react-router-dom";
 function Blog() {
   const [blogs, setBlogs] = useState([
     {
-      postName: "chronically_online",
-      date: new Date("2024-02-28"),
-      thumbnail: "/chronically_online.jpg",
-      tags: ["thoughts"],
-    },
-    {
       postName: "hello_world",
       date: new Date("2023-03-26"),
       thumbnail: "/hello_world.jpeg",
