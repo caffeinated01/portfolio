@@ -1,4 +1,4 @@
-import Reveal from "../utils/Reveal";
+import Reveal from "./Reveal";
 
 function AboutSection(props) {
   return (

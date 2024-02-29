@@ -3,10 +3,10 @@ import Home from "./views/Home";
 import NoMatch from "./views/NoMatch";
 import Lenis from "@studio-freight/lenis";
 import { AnimatePresence } from "framer-motion";
-import Transition from "./Components/utils/Transition";
+import Transition from "./Components/ui/Transition";
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Post from "./Components/ui/blog/Post";
+import Post from "./Components/blog/Post";
 import Blog from "./views/Blog";
 
 function App() {

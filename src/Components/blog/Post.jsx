@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Code from "./Code";
 import Paragraph from "./Paragraph";
-import Header from "./Header";
+import H1 from "./H1";
 import Image from "./Image";
 
 function Post() {
@@ -18,7 +18,7 @@ function Post() {
   const [post, setPost] = useState("");
   useEffect(() => {
     async function fetchPost() {
-      const file = await import(`../../../posts/${postDetails.postName}.md`);
+      const file = await import(`../../posts/${postDetails.postName}.md`);
       await fetch(file.default)
         .then((res) => res.text())
         .then((response) => setPost(response));
@@ -39,7 +39,7 @@ function Post() {
               options={{
                 overrides: {
                   Code: { component: Code },
-                  h1: { component: Header },
+                  h1: { component: H1 },
                   p: { component: Paragraph },
                   img: { component: Image },
                 },

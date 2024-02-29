@@ -1,4 +1,4 @@
-function Header({ children }) {
+function H1({ children }) {
   return (
     <div className="py-2">
       <div className="text-center border-b-[1px] dark:border-b-secondary-dark border-b-secondary-light">
@@ -8,4 +8,4 @@ function Header({ children }) {
   );
 }
 
-export default Header;
+export default H1;

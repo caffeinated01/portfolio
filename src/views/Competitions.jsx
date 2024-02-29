@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Reveal from "../Components/utils/Reveal";
+import Reveal from "../Components/ui/Reveal";
 
 function Competitions() {
   const [competitions, setCompetitions] = useState([
