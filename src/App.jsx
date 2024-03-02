@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Post from "./Components/blog/Post";
 import Blog from "./views/Blog";
+import Footer from "./Components/ui/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -43,6 +44,7 @@ function App() {
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </AnimatePresence>
+          <Footer />
         </div>
       </div>
     </>
