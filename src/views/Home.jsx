@@ -1,17 +1,8 @@
 import About from "./About";
 import { BsMouse } from "react-icons/bs";
 import Competitions from "./Competitions";
-import { useEffect } from "react";
 
 function Home() {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  });
-
   return (
     <>
       <div>
