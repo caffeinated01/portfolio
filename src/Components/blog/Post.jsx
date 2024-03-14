@@ -2,9 +2,9 @@ import Markdown from "markdown-to-jsx";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Code from "./Code";
-import Paragraph from "./Paragraph";
 import H1 from "./H1";
 import Image from "./Image";
+import Paragraph from "./Paragraph"
 
 function Post() {
   const params = useParams();
@@ -40,8 +40,8 @@ function Post() {
                 overrides: {
                   Code: { component: Code },
                   h1: { component: H1 },
-                  p: { component: Paragraph },
                   img: { component: Image },
+                  p: {component: Paragraph}
                 },
               }}
             >

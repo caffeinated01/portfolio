@@ -6,7 +6,8 @@ function Competitions() {
     {
       postName: "vjc_x_tp_hackathon_2024",
       date: new Date("2024-03-14"),
-      description: "Upcoming",
+      description:
+        "Data Science Hackathon is a three-day bootcamp jointly conducted by Temasek Polytechnic (TP) and Victoria Junior College (VJC).",
     },
     {
       postName: "hack@ac",

@@ -4,15 +4,9 @@ import { Link } from "react-router-dom";
 function Blog() {
   const [blogs, setBlogs] = useState([
     {
-      postName: "hello_world",
-      date: new Date("2023-03-26"),
-      thumbnail: "/hello_world.jpeg",
-      tags: ["misc."],
-    },
-    {
       postName: "vjc_x_tp_hackathon_2024",
       date: new Date("2024-03-14"),
-      thumbnail: "/upcoming.jpg",
+      thumbnail: "/vjcxtp24-3.jpg",
       tags: ["comp."],
     },
     {
