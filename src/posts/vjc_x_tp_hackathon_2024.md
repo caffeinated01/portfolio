@@ -19,7 +19,7 @@ The instructors then went on to teach us about the basics of Python.
 <img alt="Image" src="/vjcxtp24-3.jpg">
 
 <p>We then went on to Data Visualisation. Data visualisation is simply plotting graphs to simplify the process of identifying trends and patterns.</p>
-</p>We plotted Histograms, Scatterplots, Boxplots, Bar Charts, Facetgrids, as well as a heatmap (correlation matrix) based on a dataset provided.</p>
+<p>We plotted Histograms, Scatterplots, Boxplots, Bar Charts, Facetgrids, as well as a heatmap (correlation matrix) based on a dataset provided.</p>
 
 <img alt="Image" src="/vjcxtp24-4.jpg">
 
