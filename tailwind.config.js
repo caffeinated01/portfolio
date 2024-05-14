@@ -10,6 +10,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        home: [
+          "SF Pro Display",
+          "SF Pro Icons",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
         bodoniModa: ["Bodoni Moda", "serif"],
         mplus: ["'M PLUS Rounded 1c'", "Verdana", "sans-serif"],
         inter: ["Inter", "sans-serif"],

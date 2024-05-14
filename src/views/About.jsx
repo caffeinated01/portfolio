@@ -12,6 +12,7 @@ import {
   FaDocker,
 } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiGnubash } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import Icon from "/icon.jpeg";
 
 function About() {
@@ -121,7 +122,15 @@ function About() {
         <div className="rounded-md dark:bg-background-light dark:text-primary-light italic bg-background-dark text-primary-dark px-3 py-2">
           <h1>"Hi, I'm Javier. Welcome to my site!"</h1>
         </div>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-row gap-10">
+          <a href="https://github.com/caffeinated01">
+            <FaGithub size={40} />
+          </a>{" "}
+          <a href="mailto:lim_kai_zhe_javier@xinminss.edu.sg">
+            <MdEmail size={40} />
+          </a>{" "}
+        </div>
+        <div className="flex flex-col gap-12 font-inter">
           {aboutParas.map((para, idx) => (
             <AboutSection key={idx} title={para.title} body={para.body} />
           ))}
